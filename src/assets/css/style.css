@@ -1,0 +1,27 @@
+div.tab-a {
+    border-radius: 10px;
+    min-width: 80px !important;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px;
+}
+
+div.tab-a.active {
+    background-color: #ededee;
+    border-radius: 10px;
+    min-width: 80px !important;
+    height: 50px;
+    color: darkslategrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.tab-a a {
+    color: #385fcf;
+    text-decoration: none;
+    font-weight: 700 !important;
+}

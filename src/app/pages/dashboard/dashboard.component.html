@@ -1,0 +1,19 @@
+<!-- page heading -->
+<div class="row mb-3">
+    <div class="col-md-12">
+        <div class="card border-left-primary shadow h-100">
+            <div class="card-body d-flex justify-content-between mx-3">
+                <div (click)="setIndex(i)" *ngFor="let menuItem of menuItems;let i=index" [class.active]="selectedIndex===i" class="{{menuItem.class}} tab-a">
+                    <a routerLinkActive="active" [routerLink]="[menuItem.path]" class="mb-1">{{menuItem.title}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="selectedIndex==0">
+    <app-graph-card></app-graph-card>
+</div>
+<div *ngIf="selectedIndex==1">
+    <app-graph-card></app-graph-card>
+</div>
