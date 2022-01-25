@@ -11,8 +11,12 @@
     </div>
 </div>
 
-<div *ngIf="selectedIndex==0">
+
+<div *ngIf="selectedIndex==0" style="display:block;position: relative;">
     <app-graph-card></app-graph-card>
+    <div class="floating-comparison-button">
+        <button><span class="far fa-chart-bar"></span> View Comparison Chart</button>
+    </div>
 </div>
 <div *ngIf="selectedIndex==1">
     <app-graph-card></app-graph-card>

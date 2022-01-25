@@ -25,3 +25,25 @@ div.tab-a a {
     text-decoration: none;
     font-weight: 700 !important;
 }
+
+div.floating-comparison-button {
+    display: block;
+    position: absolute;
+    justify-content: center;
+    left: 42%;
+    right: 0;
+    bottom: 0;
+}
+
+div.floating-comparison-button button {
+    border: none;
+    border-radius: 30px;
+    background-color: #385fcf;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    font-weight: 500;
+    box-shadow: 1px 3px 5px 1px gray;
+}
